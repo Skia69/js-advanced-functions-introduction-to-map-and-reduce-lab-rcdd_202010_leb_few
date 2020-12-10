@@ -1,5 +1,5 @@
 // Your code here
-function mapToNegativize(src) {
+const mapToNegativize = (src) => {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(-1 * src[i])
@@ -7,7 +7,7 @@ function mapToNegativize(src) {
   return r
 }
 
-function mapToNoChange(src) {
+const mapToNoChange = (src) => {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(src[i])
