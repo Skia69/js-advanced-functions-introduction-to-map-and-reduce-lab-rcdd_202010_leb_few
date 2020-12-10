@@ -15,7 +15,7 @@ function mapToNoChange(src) {
   return r
 }
 
-function mapToDouble(src) {
+const mapToDouble = (src) => {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(2 * src[i])
@@ -23,7 +23,7 @@ function mapToDouble(src) {
   return r
 }
 
-function mapToSquare(src) {
+const mapToSquare = (src) => { 
   let r = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(src[i] * src[i])
@@ -31,7 +31,7 @@ function mapToSquare(src) {
   return r
 }
 
-function reduceToTotal(src, startingPoint=0) {
+const reduceToTotal = (src, startingPoint = 0) => {
   let total = startingPoint
   for (let i = 0; i < src.length; i++ ) {
     total = total + src[i]
@@ -39,14 +39,14 @@ function reduceToTotal(src, startingPoint=0) {
   return total
 }
 
-function reduceToAllTrue(src) {
+const reduceToAllTrue = (src) => {
   for (let i = 0; i < src.length; i++ ) {
     if (!src[i]) return false
   }
   return true
 }
 
-function reduceToAnyTrue(src) {
+const reduceToAnyTrue = (src) => {
   for (let i = 0; i < src.length; i++ ) {
     if (src[i]) return true
   }
