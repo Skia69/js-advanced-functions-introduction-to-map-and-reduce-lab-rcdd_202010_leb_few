@@ -16,15 +16,15 @@ const mapToNoChange = (src) => {
 }
 
 const mapToDouble = (src) => {
-  let r = []
-  for (let i = 0; i < src.length; i++ ) {
-    r.push(2 * src[i])
+  let result = []
+  for (let item of src ) {
+    result.push(2 * item)
   }
-  return r
+  return result
 }
 
 const mapToSquare = (src) => { 
-  let r = []
+  let item = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(src[i] * src[i])
   }
