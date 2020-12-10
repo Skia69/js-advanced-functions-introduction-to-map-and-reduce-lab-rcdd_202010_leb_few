@@ -4,7 +4,7 @@ const mapToNegativize = (src) => {
   for (let item of src) {
     result.push(items * -1)
   }
-  return r
+  return result
 }
 
 const mapToNoChange = (src) => {
