@@ -40,7 +40,12 @@ const reduceToTotal = (src, startingPoint = 0) => {
 }
 
 const reduceToAllTrue = (src) => {
-  for (let item of src) { return item ? true : false }
+  for (let item of src) { 
+    if (item){ 
+      return true
+    } 
+    return flase
+  }
 }
 
 const reduceToAnyTrue = (src) => {
