@@ -47,8 +47,8 @@ const reduceToAllTrue = (src) => {
 }
 
 const reduceToAnyTrue = (src) => {
-  for (let i = 0; i < src.length; i++ ) {
-    if (src[i]) return true
+  for (let item of src) {
+    if (item) return true
   }
   return false
 }
