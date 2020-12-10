@@ -44,7 +44,7 @@ const reduceToAllTrue = (src) => {
     if (item){ 
       return true
     } 
-    return flase
+    return false
   }
 }
 
