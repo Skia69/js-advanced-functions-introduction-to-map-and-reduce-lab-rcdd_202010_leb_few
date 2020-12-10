@@ -2,7 +2,7 @@
 const mapToNegativize = (src) => {
   let result = []
   for (let item of src) {
-    result.push(items * -1)
+    result.push(items * (-1))
   }
   return result
 }
