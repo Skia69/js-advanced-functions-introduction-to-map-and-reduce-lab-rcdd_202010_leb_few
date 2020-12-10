@@ -43,9 +43,10 @@ const reduceToAllTrue = (src) => {
   for (let item of src) { 
     if (!item){ 
       return true
-    } 
+    } else {
     return false
-  }
+    }
+    }
 }
 
 const reduceToAnyTrue = (src) => {
