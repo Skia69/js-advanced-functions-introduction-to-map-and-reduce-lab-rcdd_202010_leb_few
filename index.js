@@ -41,7 +41,7 @@ const reduceToTotal = (src, startingPoint = 0) => {
 
 const reduceToAllTrue = (src) => {
   for (let item of src) { 
-    if (item){ 
+    if (!item){ 
       return true
     } 
     return false
