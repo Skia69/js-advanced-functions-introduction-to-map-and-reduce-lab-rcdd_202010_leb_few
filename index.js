@@ -8,11 +8,11 @@ const mapToNegativize = (src) => {
 }
 
 const mapToNoChange = (src) => {
-  let r = []
-  for (let i = 0; i < src.length; i++ ) {
-    r.push(src[i])
+  let result = []
+  for (let item of src ) {
+    result.push(item)
   }
-  return r
+  return result
 }
 
 const mapToDouble = (src) => {
