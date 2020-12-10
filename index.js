@@ -1,8 +1,8 @@
 // Your code here
 const mapToNegativize = (src) => {
-  let r = []
-  for (let i = 0; i < src.length; i++ ) {
-    r.push(-1 * src[i])
+  let result = []
+  for (let item of src) {
+    result.push(items * -1)
   }
   return r
 }
